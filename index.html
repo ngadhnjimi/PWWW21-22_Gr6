@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Project</title>
     <link rel="stylesheet" href="css/main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -23,6 +27,7 @@
         </div>
     <hr>
         <nav>
+        
             <div class="main-elements">
                 <ul>
                     <li><a href="">Ballina</a></li>
@@ -45,12 +50,47 @@
 
         </div>
         
-        <section>
-            <div class="first">
-              
-            </div>
-
-        </section>
+        <div class="first" >
+                
+                    <div class="container">
+                        <div class="slide-container">
+                            <div class="slide active">
+                                <img src="images/foto1.jpg" width="760" height="320" alt="">
+                                
+                            </div>
+                            <div class="slide">
+                                <img src="images/foto2.jpg" width="760" height="320" alt="">
+                                
+                            </div>
+                            <div class="slide">
+                                <img src="images/foto3.jpg" width="760" height="320" alt="">
+                                
+                            </div>
+                            <div class="slide">
+                                <img src="images/foto4.jpg" width="760" height="320" alt="">
+                                
+                            </div>
+                        </div>
+                </div>
+                
+                    <div id="prev" class="fas fa-arrow-left"></div>
+                    <div id="next" class="fas fa-arrow-right"></div>
+                
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            $('#prev').click(function(){
+                                $('.container').find('.active').prev().addClass('active');
+                                $('.container').find('.active').next().removeClass('active')
+                            });
+                            $('#next').click(function(){
+                                $('.container').find('.active').next().removeClass('active');
+                                $('.container').find('.active').prev().addClass('active')
+                            });
+                        });
+                    </script>
+                
+        </div>
+        
     
     </main>
 
