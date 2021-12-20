@@ -40,11 +40,12 @@ p{
 }
 
 .first{
-    height: 100vh;
-    /* background: linear-gradient(55deg, gold 50%, #333 0%); */
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px;
+    padding: 5px;
 
 }
 
@@ -79,34 +80,32 @@ p{
 }
 #prev, #next{
     position:absolute;
-    bottom: -5%;
-    transform: translateY(-50%);
     border-radius: 50px;
-    background: grey;
-    box-shadow: 0 0 0 4px #333;
-    border: 3px solid ;
+    border: 1px solid black ;
     height: 45px;
     width: 45px;
-    line-height: 35px;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
     cursor: pointer;
-    transition: .2s linear;
+   
     
 }
 #next{
     right: 40px;
-    content: attr('>');
-
 }
 #prev{
     left: 40px;
     
 }
+#next::before{
+    
+    content: url(next.svg);
+    
+}
+#prev::before{
+    
+    content: url(prev.svg);
+    
+}
 #next:hover,
 #prev:hover{
-    background:#333;
-    color: yellow;
+ border-color: burlywood;
 }
