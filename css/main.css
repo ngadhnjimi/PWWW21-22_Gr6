@@ -1,5 +1,7 @@
 
 
+
+
 @font-face {
     font-family: "Georgia";
     src: url('../fonts/Georgia.ttf');
@@ -9,10 +11,11 @@
 .main-elements{
     text-decoration: none;
 }
-li{ display: inline;
+
+
+ li{ display: inline;
     list-style-type:none;
-    /* background-color: red; */
-    margin: 6%;
+    margin: 5%;
     
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
@@ -20,9 +23,7 @@ li{ display: inline;
 div.main-elements a{
     text-decoration: none;
 }
-/* a{
-    text-decoration: none;
-} */
+
 span.title-height{
      width: 100%;
     /* position:absolute; */
@@ -40,12 +41,13 @@ p{
 }
 
 .first{
-    height: 400px;
+   
+  
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
-    padding: 5px;
+    margin: 10px auto;
+    padding: 0px;
 
 }
 
@@ -55,6 +57,7 @@ p{
     border: 5px solid #fff;
     box-shadow: 3px 3px 10px #000;
     position: relative;
+    margin-bottom: 0px;
 }
 .slide-container{
     height: 100%;
@@ -108,4 +111,51 @@ p{
 #next:hover,
 #prev:hover{
  border-color: burlywood;
+}
+
+div.partners{
+    height: 230px;
+    position: relative;
+    
+   
+}
+
+.lenovo, .hp , .dell{
+    position: relative;
+    height:230px;
+    width:33%;
+    float:left;
+    padding: 5px 10px;
+    margin-top: 0px;
+    box-sizing: border-box;}
+    
+.partners a{
+    position: absolute;
+    display:block;
+    
+    bottom: 0px;
+    right: 0px;
+    text-decoration: none;
+    color: #dab56f;
+}
+.clear{
+    clear:left;
+}
+
+div.partners h1{
+    display:inline;
+    vertical-align: 15px;
+    
+    
+}
+
+div.partners h1,p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px;
+}
+div.partners p{
+    text-align: justify;
+}
+div.partners p+a{
+    margin-top:20px;
 }
