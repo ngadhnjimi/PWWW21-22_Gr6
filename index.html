@@ -1,127 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Project</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#prev").click(function(){
-                $('.container').find('.active').prev().addClass('active');
-                $('.container').find('.active').next().removeClass('active');
-            });
-            $("#next").click(function(){
-                $('.container').find('.active').prev().removeClass('active');
-                $('.container').find('.active').next().addClass('active');
-            });
-        });
-    </script>
-    
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slider.css">
+  </head>
+  <body>
     <header>
-        <div class=start-homepage>
-            <table width="100%" >
-                <tr>
-                    <td class="title-resize" width="50%"><a href="#start-homepage"><img src="images/fotoo.png" alt="Corporate clean" ></a>
-                    <span class="title-height"> Corporate Clean</span></td>
-                    <td width="25%"><span class="center">Call Us: xxxx xxxxxx</span></td>
-                    <td width="25%"><span>Email Us: xxxxx xxxxxxx</span></td>
-                </tr>
-                
-            </table>
+      <div class="start-homepage">
+        <table width="100%">
+          <tr>
+            <td class="title-resize" width="50%">
+              <a href="#start-homepage">
+                <img src="images/pc.png" alt="Corporate clean"/>
+              </a> &nbsp; &nbsp; &nbsp;
+              <span class="title-height"> ELECTROBYTE</span>
+            </td>
+            <td width="25%">
+              <span class="center">Call Us: xxxx xxxxxx</span>
+            </td>
+            <td width="25%"><span>Email Us: xxxxx xxxxxxx</span></td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <nav>
+        <div class="main-elements">
+          <ul class="nrequ">
+            <li class="nav-list"><a href="">Homepage</a></li>
+            <li class="nav-list"><a href="">Laptops</a></li>
+            <li class="nav-list"><a href="">Desktop</a></li>
+            <li class="nav-list"><a href="">All-in-one-PC</a></li>
+            <li class="nav-list"><a href="">Monitors</a></li>
+            <li class="nav-list"><a href="">SALE</a></li>
+          </ul>
         </div>
-    <hr>
-        <nav>
-        
-            <div class="main-elements">
-                <ul>
-                    <li><a href="">Ballina</a></li>
-                    <li><a href="">Llaptopa</a></li>
-                    <li><a href="">Shtepiza</a></li>
-                    <li><a href="">All-in-one-PC</a></li>
-                    <li><a href="">Monitora</a></li>
-                    <li><a href="">ZBRTIJE</a></li>
-                </ul>
-            </div>
-        </nav>
-    <hr>
+      </nav>
+      <hr />
     </header>
     <main>
-        
-        <div class="blockquote">
-            <p>
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit, tempore quo error atque? Dolores quisquam recusanda."
+      <div class="blockquote">
+        <p>
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit, tempore quo
+          error atque? Dolores quisquam recusanda."
+        </p>
+      </div>
+      <section class="center-slider">
+      <div class="slide hi-slide">
+        <div class="hi-prev "></div>
+        <div class="hi-next "></div>
+        <ul>
+          <li>
+      
+          <li><img src="images/foto2-hp.jpg" alt="Img 5" /></li>
+          <li><img src="images/foto3-lenovo.jpg" alt="Img 6" /></li> 
+          <li><img src="images/foto1-dell.jpg" alt="Img 7" /></li>
+          <li><img src="images/foto4.jpg" alt="Img 8" /></li>
+          
+        </ul>
+      </div></section>
+      <hr />
+
+      <div class="partners">
+        <div class="lenovo">
+          <img src="images/lenovo.jpg" alt="Ikone lenovo" />
+          <h1>&nbsp;&nbsp;&nbsp; Lenovo</h1>
+
+          <p>
+            Lenovo’s story has always been about shaping computing intelligence
+            to create a better world. With the world’s widest portfolio of
+            technology products, we deliver our vision of Smarter Technology for
+            All through products, solutions, software, and services that
+            individuals...
+          </p>
+          <a href="https://www.lenovo.com" target="_blank">Read more>> </a>
+        </div>
+        <div class="dell">
+          <img src="images/dell.jpg" alt="Ikone dell" />
+          <h1>&nbsp;&nbsp; &nbsp;Dell</h1>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            tenetur quam vero dolore iure odio, quaerat vitae voluptate ipsa
+            ullam saepe nam consequatur magnam eaque distinctio voluptatibus
+            obcaecati porro quasi?
+          </p>
+          <a href="https://www.hp.com" target="_blank">Read more>> </a>
+        </div>
+
+        <div class="hp">
+          <img src="images/hp.jpg" alt="Ikone HP" />
+          <h1>&nbsp; &nbsp; &nbsp;HP</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            tenetur quam vero dolore iure odio, quaerat vitae voluptate ipsa
+            ullam saepe nam consequatur magnam eaque distinctio voluptatibus
+            obcaecati porro quasi?
+          </p>
+          <a href="https://www.dell.com" target="_blank">Read more>> </a>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="company">
+        <h1>Indoctus facillis</h1>
+        <hr />
+        <div class="photos">
+          <img src="images/salesman.jpg" alt="" />
+          <img src="images/salesman1.jpg" alt="" />
+          <img src="images/salesman.jpg" alt="" />
+          <img src="images/salesman1.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="about-company">
+        <h1>About Our Company</h1>
+        <hr />
+        <div class="flexing">
+          <div class="info">
+            <img src="images/bossi.jpg" alt="" />
+            <p><span class="fix-left">Name: John Doe</span>
+                <span class="fix-left">Postion: Boss
             </p>
-
-        </div>
-        
-        <div class="first" >
-                
-                    <div class="container">
-                        <div class="slide-container">
-                            <div class="slide active">
-                                <img src="images/foto1.jpg" width="760" height="320" alt="">
-                                
-                            </div>
-                            <div class="slide">
-                                <img src="images/foto2.jpg" width="760" height="320" alt="">
-                                
-                            </div>
-                            <div class="slide">
-                                <img src="images/foto3.jpg" width="760" height="320" alt="">
-                                
-                            </div>
-                            <div class="slide">
-                                <img src="images/foto4.jpg" width="760" height="320" alt="">
-                                
-                            </div>
-                        </div>
-                </div>
-                
-                    <div id="prev" class="fas fa-arrow-left"></div>
-                    <div id="next" class="fas fa-arrow-right"></div>
-                
-        </div>
-        
-        <div class="partners">
-            <div class="lenovo">
-               <img src="images/lenovo.jpg" alt="Ikone lenovo"><h1> &nbsp;&nbsp;&nbsp; Lenovo</h1> 
-                
-                <p>Lenovo’s story has always been about shaping computing 
-                    intelligence to create a better world. With the world’s widest 
-                    portfolio of technology products, we deliver our vision of Smarter
-                     Technology for All through products, solutions, software, and services 
-                     that individuals...
-
-                     <a href="https://www.lenovo.com" target="_blank">Read more>> </a>
+          <p><span class="fix-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            commodi cumque nam aliquam iure facere molestias, porro, nostrum
+            a consequatur excepturi assumenda dolorum voluptates voluptatum
+            magni deserunt odit in! Esse!</span>
+          </p>
+          <a href="#">Read more>> </a>
+          </div>
+          <div class="info">
+            <img src="images/bossi.jpg" alt="" />
+            <p><span class="fix-left">Name: John Doe</span>
+                <span class="fix-left">Postion: Boss
+            </p>
+          <p><span class="fix-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            commodi cumque nam aliquam iure facere molestias, porro, nostrum
+            a consequatur excepturi assumenda dolorum voluptates voluptatum
+            magni deserunt odit in! Esse!</span>
+          </p>
+          <a href="#">Read more>> </a>
+          </div>
+          <div class="info">
+            <img src="images/bossi.jpg" alt="" />
+                <p><span class="fix-left">Name: John Doe</span>
+                    <span class="fix-left">Postion: Boss
                 </p>
-                
-            </div>
-            <div class="dell">
-              <img src="images/dell.jpg" alt="Ikone dell" > <h1>   &nbsp;&nbsp; &nbsp;Dell</h1> 
-              
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae tenetur quam vero dolore iure odio, quaerat vitae voluptate ipsa ullam saepe nam consequatur magnam eaque distinctio voluptatibus obcaecati porro quasi?
-                    <a href="https://www.hp.com" target="_blank">Read more>> </a>
-                </p>
-            </div>
+              <p><span class="fix-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                commodi cumque nam aliquam iure facere molestias, porro, nostrum
+                a consequatur excepturi assumenda dolorum voluptates voluptatum
+                magni deserunt odit in! Esse!</span>
 
-            <div class="hp">
-                
-               <img src="images/hp.jpg" alt="Ikone HP"> <h1>  &nbsp; &nbsp; &nbsp;HP</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae tenetur quam vero dolore iure odio, quaerat vitae voluptate ipsa ullam saepe nam consequatur magnam eaque distinctio voluptatibus obcaecati porro quasi?
-                    <a href="https://www.dell.com" target="_blank">Read more>> </a>
+              </p>
+              <a href="#">Read more>> </a>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+
+    <footer>
+      <div class="divide"></div>
+        <div class="footer">
+            <div class="boxes">
+                <h1>Contact Details</h1>
+                <p>
+                  <span class="fix-block">Company name</span>
+                  <span class="fix-block">Street Name & Number</span>
+                  <span class="fix-block">Town</span>
+                  <span class="fix-block">Postcode Zip</span>
+                  <br><br>
+                  <span class="fix-block">Tel: xxxxxxx</span>
+                  <span class="fix-block">Fax: xxxxxxx</span>
+                  <span class="fix-block">Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a>
+                  </span>
+                  <br><br>
+                  <span class="fix-block"></<strong>Office Hours</strong></span>
+                  <span class="fix-block">Monday-Friday: 08:00-19-30</span>
+                  <span class="fix-block">Saturday: 08:00-13:00</span>
                 </p>
             </div>
-            <div class="clear"></div>
+            <div class="boxes">
+                <h1>Stay Social</h1>
+                <ul class="stay-social">
+                  <li class="linkedin"><span style="top:-10px; position:relative;"><a href="">Get Linked up in Linkedin</a></span></li>
+                  <li class="twitter"><span style="top:-10px; position:relative;"><a href="">Keep up with our Tweets</a></span></li>
+                  <li class="pinterest"><span style="top:-10px; position:relative;"><a href="">Photos on Pinterest</a></span></li>
+                  <li class="rssfeed"><span style="top:-10px; position:relative;"><a href="">RSS Feed</a></span></li>
+                </ul>
+            </div>
+            <div class="boxes">
+                <h1>From The Blog</h1>
+                <p class="strong">Blog Post Title
+                  <span class="blog-block">Posted by Admin oo.oo.oooo </span> <br>
+                  <span class="blog-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aut provident dolore, quae atque sunt dolores impedit cupiditate.</span>
+                </p>
+                <a class="blog-read" href="#">Read more</a>
+                <br><br>
+                <p class="strong">Blog Post Title
+                  <span class="blog-block">Posted by Admin oo.oo.oooo </span>
+                  <br>
+                  <span class="blog-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aut provident dolore, quae atque sunt dolores impedit cupiditate.</span>
+                </p>
+                <a class="blog-read" href="#">Read more</a>
+            </div>
+            <div class="boxes">
+                <h1>Contact Us</h1>
+                <form action="" autocomplete="off">
+                  <input class="forma" type="text" name="name" id="name" placeholder="Name">
+                  <input class="forma" type="email" name="email" id="email" placeholder="Email">
+                  <textarea class="forma1" name="message" id="message" cols="30" rows="10">Message</textarea>
+                  <input class="butoni" type="submit" name="submit" value="SUBMIT">
+                </form>
+            </div>
         </div>
-       
-        
-    
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
+  </body>
+</html>
+
     </main>
 
     <footer>
