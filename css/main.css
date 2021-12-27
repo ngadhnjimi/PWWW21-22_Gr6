@@ -1,161 +1,222 @@
-
-
-
-
-@font-face {
+/* @font-face {
     font-family: "Georgia";
     src: url('../fonts/Georgia.ttf');
+} */
+a,
+li a {
+  text-decoration: none;
+}
+body {
+  background-color: #232323;
+  color: #989898;
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding: 0px 30px;
+}
+.main-elements {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nrequ {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin: 0px;
+  padding: 10px 5px;
+}
+
+div.main-elements a {
+  text-decoration: none;
+}
+
+span.title-height {
+  width: 100%;
+  vertical-align: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e4e4e5;
+}
+p {
+  font-size: 16px;
+  text-align: center;
 }
 
 
-.main-elements{
-    text-decoration: none;
+
+div.partners {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.partners h1 {
+  margin-top: 0px;
+  display: inline;
+}
+.partners a {
+  float: right;
+}
+.lenovo img,
+.dell img,
+.hp img {
+  border-radius: 100px;
+}
+.company .photos {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
-
- li{ display: inline;
-    list-style-type:none;
-    margin: 5%;
-    
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-}
-div.main-elements a{
-    text-decoration: none;
-}
-
-span.title-height{
-     width: 100%;
-    /* position:absolute; */
-    vertical-align: 20px;
-   /* border: 3px solid red; */
-    font-size: 24px; 
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-p{
-    font-family:"Georgia";
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-}
-
-.first{
-   
+div.flexing {
+  display: flex;
+  gap: 2rem;
   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    padding: 0px;
-
+}
+div.info {
+  align-items: center;
+  justify-content: center;
 }
 
-.container{
-    height: 320px;
-    width: 760px;
-    border: 5px solid #fff;
-    box-shadow: 3px 3px 10px #000;
-    position: relative;
-    margin-bottom: 0px;
+.company img {
+  width: 225px;
+  height: 175px;
 }
-.slide-container{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.about-company img {
+  width: 300px;
+  height: 160px;
 }
-
-.slide-container .slide{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: none;    }
-
-.slide-container .slide img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.info {
+  text-align: center;
+}
+.fix-left,
+.fix-block {
+  text-align: left;
+  display: block;
+  font-size: 18px;
+}
+.info a {
+  float: left;
+  text-decoration: none;
 }
 
-.slide-container .active{
-    display: block;
+div.divide {
+  height: 2vh;
+  background-color: rgb(221, 217, 217);
+  margin-top: 4vh;
 }
-#prev, #next{
-    position:absolute;
-    border-radius: 50px;
-    border: 1px solid black ;
-    height: 45px;
-    width: 45px;
-    cursor: pointer;
-   
-    
+div.footer {
+  display: flex;
+  align-content: space-between;
 }
-#next{
-    right: 40px;
+div.boxes {
+  width: 25%;
+  background-color: #1e1e1f;
+  padding: 20px;
 }
-#prev{
-    left: 40px;
-    
-}
-#next::before{
-    
-    content: url(next.svg);
-    
-}
-#prev::before{
-    
-    content: url(prev.svg);
-    
-}
-#next:hover,
-#prev:hover{
- border-color: burlywood;
+.boxes h1 {
+  color: #e4e4e5;
+  font-weight: 400;
 }
 
-div.partners{
-    height: 230px;
-    position: relative;
-    
-   
+.fix-block {
+  text-align: left;
+  display: block;
+  font-size: 18px;
+  color: #e4e4e5;
+  text-decoration: none;
 }
 
-.lenovo, .hp , .dell{
-    position: relative;
-    height:230px;
-    width:33%;
-    float:left;
-    padding: 5px 10px;
-    margin-top: 0px;
-    box-sizing: border-box;}
-    
-.partners a{
-    position: absolute;
-    display:block;
-    
-    bottom: 0px;
-    right: 0px;
-    text-decoration: none;
-    color: #dab56f;
+.fix-block a {
+  color: #dab56f;
+  text-decoration: none;
 }
-.clear{
-    clear:left;
+ul.stay-social {
+  display: flex;
+  flex-direction: column;
+  color: #e4e4e5;
+  line-height: 70px;
+}
+.stay-social .linkedin {
+  list-style-image: url("../images/linkedin.png");
 }
 
-div.partners h1{
-    display:inline;
-    vertical-align: 15px;
-    
-    
+.stay-social .twitter {
+  list-style-image: url("../images/twitter.png");
+}
+.stay-social .pinterest {
+  list-style-image: url("../images/pinterest.png");
+}
+.stay-social .rssfeed {
+  list-style-image: url("../images/rssfeed.png");
 }
 
-div.partners h1,p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:0px;
+a,
+a,
+a,
+a,
+a:visited,
+a:visited,
+a:visited,
+a:visited {
+  color: #dab56f;
 }
-div.partners p{
-    text-align: justify;
+.blog-block {
+  display: block;
+  color: #e4e4e5;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: left;
 }
-div.partners p+a{
-    margin-top:20px;
+.strong {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e4e4e5;
+  text-align: left;
+}
+.blog-read {
+  float: right;
+  color: #dab56f;
+}
+::placeholder {
+  font-weight: 300;
+  color: #888988;
+}
+.forma {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #2c2c2c;
+  color: #e4e4e5;
+  font-weight: 300;
+}
+.forma1 {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: #888988;
+  background-color: #2c2c2c;
+  font-weight: 300;
+}
+.butoni {
+  padding: 8px;
+  background-color: #ca952e;
+  border-radius: 10px;
+  color: #e4e4e5;
+  font-weight: bold;
+}
+.forma,
+.butoni,
+.forma1,
+input:focus {
+  border-width: 0px;
+  outline: 0; 
+  -webkit-appearance: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
