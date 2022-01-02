@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login and Registration form example</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+ 
+<body>
+ 
+<div id="container">
+<form name="regi"  method="post" onsubmit ="return verifyPassword()" action="http://www.randyconnolly.com/tests/process.php">
+
+<h2>Register</h2>
+
+<table>
+    <tr>
+       <td> <label for="r1" id="fn">First Name :</label></td>
+       <td> <input type="text" name="fname" id="r1" required></td>
+    </tr>
+    <tr>
+        <td> <label for="r2" id="ln">Last Name :</label></td>
+        <td> <input type="text" name="lname" id="r2" required></td>
+     </tr>
+     <tr>
+        <td> <label for="r3" id="em">Email :</label></td>
+        <td> <input type="email" name="email" id="r3" required></td>
+     </tr>
+     <tr>
+        <td> <label for="r4" id="pwd">Password :</label></td>
+        <td> <input type="password" name="password" id="r4" required></td>
+     </tr>
+     <tr>
+        <td> <label for="r5" id="cpwd">Confirm Password :</label></td>
+        <td> <input type="password" name="password" id="r5" onkeyup='check();' required> <span id='message'></span></td>
+     </tr>
+     <tr>
+         <td><label id="g">Gender:</label></td>
+         <td><input type="radio" id="r6" name="gender" value="male">
+             <label for="r6" id="g">Male</label>
+             <input type="radio" id="r7" name="gender" value="female">
+             <label for="r7" id="g">Female</label> </td>
+     </tr>
+     <tr >
+       <td colspan="2" style="text-align: center;">
+         
+         <input type="checkbox" id="agree" required><label for="agree"><a id="terms" href="#"> I agree with terms and conditions</a></label></td>
+     </tr>
+     <tr style="text-align: center;">
+         <td><button type="submit" value="Submit" id="button">Register</button></td>
+         <td><a href="login.html">Back to Login</a></td>
+     </tr>
+ 
+
+
+ </table>
+</form>
+</div>
+<script>
+    var check = function() {
+  if (document.getElementById('r4').value ==
+    document.getElementById('r5').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = '✔';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'X';
+  }
+}
+</script>
+</body>
+</html>

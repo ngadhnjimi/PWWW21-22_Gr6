@@ -1,0 +1,62 @@
+
+    body{
+    
+    margin: 100px;
+    background-color: #e6e6fae8;
+
+
+    }
+
+    input{
+    margin: 8px 0;
+    padding: 7px 10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+
+
+    }
+    
+    button{
+    background-color:#ccc;
+    padding: 9px 5px;
+    margin:5px 0;
+    cursor:pointer;
+    border:1px solid oldlace;
+    color: gray;
+     border-radius: 4px;
+
+    }
+    
+    button:hover{
+    opacity:0.8;
+
+    }
+    
+    
+    #fn,#ln,#em,#pwd,#g,#terms,#cpwd{
+    font-family:'Lato', sans-serif;
+    color: gray;
+
+    }
+
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: bisque;
+        border-radius: 5px;
+    }
+
+    #container{
+        display: table;
+    
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    background-color: white;
+        margin: 0px auto;
+    }
+    #container h2{
+        text-align: center;
+        font-family:'Lato', sans-serif;
+    }
+
