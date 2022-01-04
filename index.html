@@ -7,19 +7,20 @@
     <title>Web Project</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/slider.css">
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
       <div class="start-homepage">
         <table width="100%">
           <tr>
-            <td class="title-resize" width="70%">
+            <td class="logo-text" >
               <a href="index.html">
                 <img src="images/pc.png" alt="Company logo"/>
               <span class="title-height"> ELECTROBYTE</span></a> &nbsp; &nbsp; &nbsp;
 
             </td>
-            
+            <td width="40%"></td>
 
             </td>
             <td width="20%">
@@ -62,6 +63,7 @@
           <li><img src="images/foto3-lenovo.jpg" alt="Img 6" /></li> 
           <li><img src="images/foto1-dell.jpg" alt="Img 7" /></li>
           <li><img src="images/foto4.jpg" alt="Img 8" /></li>
+          <li><img src="images/foto1-dell.jpg" alt="Img 7" /></li>
           
         </ul>
       </div></section>
@@ -70,7 +72,7 @@
       <div class="partners">
         <div class="lenovo">
           <img src="images/lenovo.jpg" alt="Ikone lenovo" />
-          <h1>&nbsp;&nbsp;&nbsp; Lenovo</h1>
+          <h1 class="title-h1">&nbsp;&nbsp;&nbsp; Lenovo</h1>
 
           <p>
             Lenovo’s story has always been about shaping computing intelligence
@@ -79,24 +81,12 @@
             All through products, solutions, software, and services that
             individuals...
           </p>
-          <a href="https://www.lenovo.com" target="_blank">Read more>> </a>
+          <a href="https://www.lenovo.com/us/en/" target="_blank">Read more>> </a>
         </div>
         <div class="dell">
           <img src="images/dell.jpg" alt="Ikone dell" />
-          <h1>&nbsp;&nbsp; &nbsp;Dell</h1>
+          <h1 class="title-h1">&nbsp;&nbsp; &nbsp;Dell</h1>
 
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            tenetur quam vero dolore iure odio, quaerat vitae voluptate ipsa
-            ullam saepe nam consequatur magnam eaque distinctio voluptatibus
-            obcaecati porro quasi?
-          </p>
-          <a href="https://www.hp.com" target="_blank">Read more>> </a>
-        </div>
-
-        <div class="hp">
-          <img src="images/hp.jpg" alt="Ikone HP" />
-          <h1>&nbsp; &nbsp; &nbsp;HP</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
             tenetur quam vero dolore iure odio, quaerat vitae voluptate ipsa
@@ -105,11 +95,23 @@
           </p>
           <a href="https://www.dell.com" target="_blank">Read more>> </a>
         </div>
+
+        <div class="hp">
+          <img src="images/hp.jpg" alt="Ikone HP" />
+          <h1 class="title-h1">&nbsp; &nbsp; &nbsp;HP</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            tenetur quam vero dolore iure odio, quaerat vitae voluptate ipsa
+            ullam saepe nam consequatur magnam eaque distinctio voluptatibus
+            obcaecati porro quasi?
+          </p>
+          <a href="https://www.hp.com/rs-sr/home.html" target="_blank">Read more>> </a>
+        </div>
         <div class="clear"></div>
       </div>
 
       <div class="company">
-        <h1>Indoctus facillis</h1>
+        <h1 class="title2-h1">Indoctus facillis</h1>
         <hr />
         <div class="photos">
           <img src="images/salesman.jpg" alt="" />
@@ -120,7 +122,7 @@
       </div>
 
       <div class="about-company">
-        <h1>About Our Company</h1>
+        <h1 class="title2-h1">About Our Company</h1>
         <hr />
         <div class="flexing">
           <div class="info">
@@ -134,7 +136,7 @@
             a consequatur excepturi assumenda dolorum voluptates voluptatum
             magni deserunt odit in! Esse!</span>
           </p>
-          <a href="#">Read more>> </a>
+          <a href="about-us.html">Read more>> </a>
           </div>
           <div class="info">
             <img src="images/bossi.jpg" alt="" />
@@ -147,7 +149,7 @@
             a consequatur excepturi assumenda dolorum voluptates voluptatum
             magni deserunt odit in! Esse!</span>
           </p>
-          <a href="#">Read more>> </a>
+          <a href="about-us.html">Read more>> </a>
           </div>
           <div class="info">
             <img src="images/bossi.jpg" alt="" />
@@ -161,7 +163,7 @@
                 magni deserunt odit in! Esse!</span>
 
               </p>
-              <a href="#">Read more>> </a>
+              <a href="about-us.html">Read more>> </a>
           </div>
         </div>
       </div>
@@ -215,17 +217,23 @@
             </div>
             <div class="boxes">
                 <h1>Contact Us</h1>
-                <form name="contact-us" method="post" action="http://www.randyconnolly.com/tests/process.php">
-                  <input class="forma" type="text" name="name" id="name" placeholder="Name">
-                  <input class="forma" type="email" name="email" id="email" placeholder="Email">
-                  <textarea class="forma1" name="message" id="message" cols="30" rows="10">Message</textarea>
+
+                <form name="contact-us" id="form" method="POST">
+                  <div id="message"></div>
+                  <input class="forma" type="text" name="username" id="username" placeholder="Name" onkeypress=" return validateName(event)" required>
+                  <input class="forma" type="email" name="email" id="email" placeholder="Email" required>
+                  <textarea class="forma1" name="textarea" id="textarea" cols="30" rows="10" required ></textarea > 
                   <input class="butoni" type="submit"  value="SUBMIT">
                 </form>
             </div>
         </div>
+        <div class="copyrights">
+          <p><span class="fix-p">Copyrights &copy;2013 Domain Name - All rights reserved</span> <span class="fix-right">Template by OS Templates</span></p>
+        </div>
     </footer>
 
-
+    <script defer src="js/script.js"></script>
+    <script src="js/timezone.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
 		<script>
