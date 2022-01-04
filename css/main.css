@@ -1,13 +1,13 @@
-/* @font-face {
+@font-face {
     font-family: "Georgia";
     src: url('../fonts/Georgia.ttf');
-} */
+}
 a,
 li a {
   text-decoration: none;
 }
 body {
-  background-color: #232323;
+  /* background-color: #232323; */
   color: #989898;
   margin: 0;
   padding: 0;
@@ -36,10 +36,13 @@ div.main-elements a {
 
 span.title-height {
   width: 100%;
+  /* position:absolute; */
   vertical-align: 20px;
+  /* border: 3px solid red; */
   font-size: 24px;
   font-weight: bold;
   color: #e4e4e5;
+  font-family: Georgia;
 }
 p {
   font-size: 16px;
@@ -52,12 +55,13 @@ div.partners {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
+  /* flex-shrink: 1; */
 }
 .partners h1 {
   margin-top: 0px;
   display: inline;
 }
-.partners a {
+.partners a, .fix-right {
   float: right;
 }
 .lenovo img,
@@ -65,8 +69,19 @@ div.partners {
 .hp img {
   border-radius: 100px;
 }
+.lenovo, .hp, .dell{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.title-h1{
+  font-family: Georgia, cursive;
+}.title2-h1{
+font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
+
 .company .photos {
   display: flex;
+  /* justify-items:stretch; */
   gap: 2rem;
   justify-content: space-between;
 }
@@ -74,7 +89,9 @@ div.partners {
 div.flexing {
   display: flex;
   gap: 2rem;
-  
+  /* justify-content: space-around; */
+
+  /* flex-shrink: 1; */
 }
 div.info {
   align-items: center;
@@ -97,6 +114,7 @@ div.info {
   text-align: left;
   display: block;
   font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .info a {
   float: left;
@@ -137,6 +155,7 @@ div.boxes {
 ul.stay-social {
   display: flex;
   flex-direction: column;
+  /* background-color: antiquewhite; */
   color: #e4e4e5;
   line-height: 70px;
 }
@@ -214,9 +233,44 @@ a:visited {
 .forma1,
 input:focus {
   border-width: 0px;
-  outline: 0; 
+  outline: 0; /* I have also tried outline:none */
   -webkit-appearance: none;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+}
+.fix-p{
+  float:  left;
+  margin: 15px;
+  font-size: 16px;
+}
+.start-homepage{
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  /* animation-timing-function: ease-out; */
+  animation-delay: 0.8s;
+}
+
+.logo-text:hover{
+  animation: moveInLeft 1s ease-out;
+}
+.logo-text:active{
+  animation: none;
+}
+@keyframes moveInLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80%{
+    transform: translateX(15px);
+
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
 }
