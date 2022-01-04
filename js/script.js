@@ -21,29 +21,23 @@ form.addEventListener('submit' , function(e){
     message.innerText = error
 })
 
-function validateName(e) {
-    const pattern = /^[A-Za-z]$/;
-    return pattern.test(e.key )
-}
-
-
 function check() {
             
-    if (document.getElementById('r4').value ==
-      document.getElementById('r5').value) {
-      document.getElementById('message').style.color = 'green';
-      document.getElementById('message').innerHTML = '✔';
-      console.log(document.getElementById('r4').innerHTML.length)
-      return true;
-    } else {
-      document.getElementById('message').style.color = 'red';
-      document.getElementById('message').innerHTML = 'X';
-      return false;
-    }
+  if (document.getElementById('r4').value ==
+    document.getElementById('r5').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = '✔';
+    console.log(document.getElementById('r4').innerHTML.length)
+    return true;
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'X';
+    return false;
+  }
 }
 
 function checkpw() {
-var bool = false;
+
 if (document.getElementById('r4').value.length <8) {
 
 document.getElementById('pwdlength').style.color = 'red';
@@ -61,18 +55,22 @@ return true;
 }
 
 function validateName(e) {
-        const pattern = /^[A-Za-z]$/;
-        return pattern.test(e.key )
-  }
-  
+      const pattern = /^[A-Za-z]$/;
+      return pattern.test(e.key )
+}
+
 
 function validateForm() {
-  var isFormValid = true;
-    
+var isFormValid = true;
 
-  isFormValid &= checkpw();
-  isFormValid&=check();
-  
-    alert('Form is submitted')
-    return isFormValid? true:false;
+isFormValid &= checkpw();
+isFormValid&=check();
+
+if(isFormValid){
+  alert("Form Submitted")
+  return true;
+}else{
+  alert("Fill requirements to proceed")
+  return false;
+}
 }
