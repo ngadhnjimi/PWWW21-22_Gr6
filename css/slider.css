@@ -16,6 +16,7 @@
               height: 40px; 
               margin-top: -20px;     
                 border-radius: 50px; 
+                /* transition: 0.3s; */
                  
                 
               line-height: 40px;
@@ -32,6 +33,8 @@
             {
             opacity: 1; 
             background-color: #fff;  
+            /* transition: 3s; */
+
             }
             
            .hi-slide .hi-prev { left: -200px; }
@@ -50,6 +53,8 @@
                         padding: 0;
                         right: 134px;
                         top: -70px;
+                        /* transition: 3.5s; */
+
                         
             }
             
@@ -66,10 +71,15 @@
             padding: 0;
             /* border: 3px solid #fff;               */
             /* background-color: #333;  */
-            cursor: pointer; }
+            cursor: pointer;
+            transition: 0.9s;
             
-        .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
-
- 
+            
+          }
+            
+        .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center; 
+          /* transition: 3s; */
+         
+        }
 
 	
