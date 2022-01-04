@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# v1.0 : 04-01-2022
+ 
+CACHE:
+index.html
+css/main.css
+/js/jquery.hislide.js
+ 
+ 
+NETWORK:
+*
+
+FALLBACK:
+/404/404.html
+ 
